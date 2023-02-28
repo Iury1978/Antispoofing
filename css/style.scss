@@ -1,0 +1,1249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+@font-face {
+  font-family: "Sohne";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-Buch.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-Buch.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-BuchKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-Dreiviertelfett.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-Extrafett.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtrafettKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-BuchKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Sohne-Buch.otf") format("otf");
+}
+@font-face {
+  font-family: "Sohne Cursive";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-BuchKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Sohne-Buch.otf") format("otf");
+}
+@font-face {
+  font-family: "Sohne Extra";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-Extraleicht.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-BuchKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Sohne-Buch.otf") format("otf");
+}
+@font-face {
+  font-family: "Sohne Leicht";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-Leicht.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("otf");
+}
+@font-face {
+  font-family: "Sohne Kraftig";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-Kraftig.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("otf");
+}
+@font-face {
+  font-family: "Sohne ExtraleichtKursiv";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("otf");
+}
+@font-face {
+  font-family: "Sohne-Halbfett";
+  src: local("Sohne"),
+    url("../fonts/Soehne/Soehne/Sohne-Halbfett.otf") format("opentype")
+      tech(color-COLRv1),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv.otf") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("opentype"),
+    url("../fonts/Soehne/Soehne/Sohne-ExtraleichtKursiv") format("otf");
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main_container {
+  max-width: 1450px;
+  margin: 0 auto;
+}
+$sohneExtra: "Sohne Extra", sans-serif;
+$sohne: "Sohne", sans-serif;
+$sohneCursive: "Sohne Cursive", sans-serif;
+$sohneLeicht: "Sohne Leicht", sans-serif;
+$sohneKraftig: "Sohne Kraftig", sans-serif;
+$sohneLeichtKursive: "Sohne ExtraleichtKursiv", sans-serif;
+$Sohne-Halbfett: "Sohne-Halbfett", sans-serif;
+header {
+  border-bottom: 1px solid rgb(244, 244, 244);
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+    .logo {
+      .logo_mobile {
+        display: none;
+      }
+      .burger {
+        display: none;
+      }
+    }
+    .navbar_nav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      max-width: 870px;
+      width: 100%;
+      gap: 5px;
+      li {
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+        a {
+          font-size: 17px;
+          font-family: $sohneLeicht;
+          color: rgb(76, 71, 68);
+          line-height: 1.765;
+          text-decoration: none;
+        }
+        &:hover{
+          font-family: $sohneKraftig;
+          font-weight: 700;
+        }
+      }
+    }
+    .header_right {
+      display: flex;
+      .mobile_search {
+        display: none;
+      }
+      div {
+        white-space: nowrap;
+        cursor: pointer;
+        svg {
+          margin-right: 12px;
+        }
+        &:last-child {
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+.header_mobile{
+  display: none;
+  background: #00000050;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150%;
+  .header_mobile_in{
+    background: #fff;
+  }
+  .close_button{
+    cursor: pointer;
+    img{
+      max-width: 22px;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+  }
+  .navbar_mobile{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(244, 244, 244);  
+    a{
+      display: block;
+      padding: 7px 0;
+      padding-left: 20px;
+      text-decoration: none;
+      font-family: $sohneLeicht;
+      color: rgb(76, 71, 68);
+      transition: 0.5s;
+      font-size: 15px;
+      &:hover{
+        background: rgb(244, 244, 244);
+        font-weight: 700;
+      }
+    }
+  }
+  .navbar_mobile_bottom{
+    padding: 20px 0;
+    a{
+      display: block;
+      padding: 7px 0;
+      padding-left: 20px;
+      text-decoration: none;
+      font-family: $sohneLeicht;
+      color: rgb(76, 71, 68);
+      transition: 0.5s;
+      font-size: 15px;
+      &:hover{
+        background: rgb(244, 244, 244);
+        font-weight: 700;
+      }
+    }
+  }
+}
+.search_modal_mobile{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background: #00000050;
+  height: 150%;
+  display: none;
+  .search_modal_mobile_in{
+    background: #fff;
+  }
+  
+  .search_modal_close{
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    img{
+      max-width: 22px;
+    }
+  }
+  form{
+    padding: 45px 15px;
+    padding-bottom: 20px;
+    .search_mobile{
+      background-color: rgb(244, 244, 244);
+      padding: 7px 10px;
+      display: flex;
+      align-items: center;
+      border-radius:30px;
+      input{
+        display: block;
+        width: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-family: $sohne;
+        font-size: 15px;
+      }
+      svg{
+        max-width: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .search_modal_mobile_text{
+    padding: 0 15px;
+    height: 70vh;
+    p{
+      font-family: $sohneLeicht;
+      color: rgb(184, 181, 180);
+      font-size: 15px;
+      margin-top: 15px;
+    }
+    h1{
+      font-size: 18px;
+      font-family: $sohneKraftig;
+      
+    }
+  }
+}
+.home_mobile {
+  width: 100%;
+  max-height: 345px;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+  padding: 25px 0 30px 12px;
+  div {
+    position: relative;
+    z-index: 1;
+    h1 {
+      font-size: 21px;
+      font-family: $sohneKraftig;
+      color: rgb(238, 238, 238);
+      line-height: 1.19;
+    }
+    p {
+      font-size: 13px;
+      font-family: $sohneLeicht;
+      color: rgb(238, 238, 238);
+      line-height: 1.19;
+      margin-top: 15px;
+    }
+    .now_in {
+      font-size: 13px;
+      font-family: $sohneLeicht;
+      color: rgb(255, 255, 255);
+      line-height: 1.769;
+      margin-top: 30px;
+    }
+    span {
+      font-size: 13px;
+      font-family: $sohneKraftig;
+      color: rgb(255, 255, 255);
+      line-height: 1.769;
+      display: block;
+      margin-top: 10px;
+    }
+    a {
+      font-size: 15px;
+      font-family: $sohneKraftig;
+      color: rgb(255, 255, 255);
+      line-height: 2.2;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      padding: 7px 20px;
+      border: 2px solid #fff;
+      border-radius: 30px;
+    }
+  }
+  img {
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    max-height: 270px;
+    min-height: 264px;
+  }
+}
+.index_bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  .index_bottom_left {
+    max-width: 980px;
+    width: 100%;
+    .home {
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      img {
+        top: 0;
+        left: 0;
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      div {
+        position: relative;
+        z-index: 1;
+      }
+      h1 {
+        font-size: 25px;
+        font-family: "Sohne", sans-serif;
+        color: rgb(238, 238, 238);
+        line-height: 1.32;
+      }
+      p {
+        font-size: 18px;
+        font-family: $sohneLeicht;
+        color: rgb(238, 238, 238);
+        line-height: 1.32;
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+      span {
+        font-size: 15px;
+        font-family: "Sohne", sans-serif;
+        color: rgb(238, 238, 238);
+        line-height: 1.32;
+        display: block;
+        text-align: right;
+      }
+      .now_in {
+        margin-top: 40px;
+        font-size: 15px;
+        font-family: $sohneLeicht;
+        color: rgb(255, 255, 255);
+        line-height: 1.8;
+        text-align: right;
+      }
+      a {
+        font-size: 15px;
+        font-family: $sohne;
+        color: rgb(255, 255, 255);
+        line-height: 2.2;
+        text-decoration: none;
+        max-width: 140px;
+        width: 100%;
+        float: right;
+        padding: 5px 0;
+        text-align: center;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 30px;
+        margin-top: 10px;
+      }
+    }
+    .account {
+      .title {
+        margin-top: 50px;
+        h1 {
+          font-size: 43px;
+          font-family: $sohneLeicht;
+          color: rgb(117, 142, 184);
+          line-height: 1.186;
+          font-weight: 400;
+        }
+        h2 {
+          font-size: 43px;
+          font-family: "Sohne";
+          color: rgb(117, 142, 184);
+          line-height: 1.186;
+          font-weight: 900;
+        }
+        button {
+          margin-top: 20px;
+          border-width: 0px;
+          border-color: rgb(4, 6, 6);
+          border-style: solid;
+          background-color: rgb(112, 95, 146);
+          font-size: 15px;
+          font-family: $sohneKraftig;
+          color: rgb(255, 255, 255);
+          line-height: 2.2;
+          max-width: 70px;
+          width: 100%;
+          border-radius: 30px;
+        }
+      }
+      .account_in {
+        display: flex;
+        padding: 40px 0;
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
+        border-bottom: 1px solid #4c474430;
+        .account_in_right {
+          width: 100%;
+          .ava_title {
+            display: flex;
+            align-items: center;
+            h1 {
+              font-size: 15px;
+              font-family: "Sohne";
+              color: rgb(76, 71, 68);
+              line-height: 1.533;
+              margin-top: 0;
+              margin-left: 15px;
+            }
+            p {
+              font-size: 15px;
+              font-family: $sohne;
+              color: rgb(184, 181, 180);
+              line-height: 1.533;
+              margin-left: 10px;
+            }
+            span {
+              font-size: 15px;
+              font-family: $sohneCursive;
+              color: rgb(184, 181, 180);
+              line-height: 1.533;
+              font-weight: 400;
+              margin-left: 30px;
+            }
+            img {
+              margin: 0 10px;
+              border-radius: 50%;
+              max-width: 33px;
+            }
+            h3 {
+              font-size: 15px;
+              font-family: "Sohne";
+              color: rgb(184, 181, 180);
+              line-height: 1.533;
+            }
+          }
+          .title {
+            font-size: 21px;
+            font-family: "Sohne";
+            color: rgb(76, 71, 68);
+            line-height: 1.435;
+            margin-top: 25px;
+            max-width: 570px;
+          }
+          .description {
+            font-size: 17px;
+            font-family: $sohneExtra;
+            color: rgb(76, 71, 68);
+            line-height: 1.588;
+            margin-top: 20px;
+            max-width: 715px;
+          }
+          .account_in_right_bottom {
+            margin-top: 30px;
+            width: 100%;
+            gap: 10px;
+            .account_in_right_bottom_in {
+              max-width: 380px;
+              width: 100%;
+              gap: 10px;
+              justify-content: start !important;
+              a {
+                font-family: $sohneLeicht;
+                color: rgb(119, 110, 105);
+                line-height: 2.077;
+                text-decoration: none;
+                background: #77646430;
+                color: black;
+                border-radius: 30px;
+                padding: 4px 12px;
+                font-size: 13px;
+                color: rgb(76, 71, 68);
+                line-height: 2.077;
+              }
+              p {
+                margin-bottom: 0;
+                font-size: 13px;
+                font-family: $sohneLeicht;
+                color: rgb(184, 181, 180);
+                line-height: 1.769;
+                margin-right: 10px;
+              }
+              span {
+                font-size: 13px;
+                font-family: $sohneLeicht;
+                color: rgb(184, 181, 180);
+                line-height: 1.769;
+                margin-left: 10px;
+              }
+              div {
+                display: flex;
+                align-items: center;
+                svg {
+                  transform: translateY(-3px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .live_ness {
+      .account {
+        .account_in {
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      .live_ness_h1 {
+        font-size: 25px;
+        font-family: $sohneKraftig;
+        color: rgb(76, 71, 68);
+        line-height: 1.4;
+        margin-top: 60px;
+        margin-bottom: 50px !important;
+      }
+      .live_ness_p {
+        font-size: 21px;
+        font-family: $sohneExtra;
+        color: rgb(141, 138, 137);
+        line-height: 1.476;
+        margin-left: 40px;
+      }
+      .span {
+        font-size: 17px;
+        font-family: $sohneLeicht;
+        color: rgb(76, 71, 68);
+        line-height: 1.588;
+        margin-top: 50px;
+        display: block;
+      }
+      i {
+        font-size: 13px;
+        font-family: $sohneLeichtKursive;
+        color: rgb(141, 138, 137);
+        line-height: 1.923;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    .proliferation {
+      .account {
+        .account_in {
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      .proliferation_p {
+        font-size: 17px;
+        font-family: $sohneLeicht;
+        color: rgb(76, 71, 68);
+        line-height: 1.588;
+        margin-bottom: 50px !important;
+      }
+      .proliferation_span {
+        font-size: 17px;
+        font-family: $sohneLeichtKursive;
+        color: rgb(134, 182, 192);
+        line-height: 1.588;
+        border-left: 4px solid rgb(134, 182, 192);
+        margin-left: 30px;
+        padding-left: 30px;
+        display: block;
+        margin-bottom: 35px;
+      }
+      .proliferation_h2 {
+        font-size: 21px;
+        font-family: $sohneKraftig;
+        color: rgb(76, 71, 68);
+        line-height: 1.476;
+        margin-bottom: 35px !important;
+        display: flex;
+        img {
+          margin-right: 15px;
+          max-width: 13px;
+          max-height: 23px;
+          transform: translateY(5px);
+        }
+      }
+    }
+    .fake_part {
+      .account {
+        .account_in {
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      h2 {
+        font-size: 21px;
+        font-family: $sohneKraftig;
+        color: rgb(76, 71, 68);
+        line-height: 1.476;
+        margin-bottom: 15px !important;
+      }
+      ul {
+        list-style-image: url("../images/home/icon_circle.png");
+        margin-left: 20px;
+        padding: 0;
+        margin-top: 15px;
+        li {
+          list-style-image: url("../images/home/icon_circle.png");
+          font-size: 17px;
+          font-family: $sohneLeicht;
+          color: rgb(76, 71, 68);
+          line-height: 1.588;
+          display: flex;
+          align-items: flex-start;
+          margin-top: 30px;
+          div {
+            display: flex;
+          }
+          svg {
+            margin-right: 20px;
+            transform: translateY(9px);
+          }
+          span {
+            margin-right: 10px;
+            border: 1px solid rgb(165, 202, 210);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0);
+            font-size: 13px;
+            font-family: $sohneLeicht;
+            color: rgb(146, 188, 197);
+            line-height: 1;
+            padding: 4px 10px;
+            padding-top: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      .list_item {
+        margin-left: 5px;
+      }
+      .fake_part_bottom_text {
+        font-size: 17px;
+        font-family: $sohneLeicht;
+        color: rgb(76, 71, 68);
+        line-height: 1.588;
+        margin-top: 20px;
+      }
+      .fake_part_bottom_img {
+        margin: 50px auto;
+      }
+      .fake_part_bottom_in_text {
+        font-size: 17px;
+        font-family: $sohneLeicht;
+        color: rgb(76, 71, 68);
+        line-height: 1.588;
+        display: block;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  .index_bottom_right {
+    max-width: 375px;
+    width: 100%;
+    border-left: 1px solid rgb(244, 244, 244);
+    padding: 50px 0;
+    padding-left: 30px;
+    form {
+      div {
+        background-color: rgb(244, 244, 244);
+        max-width: 300px;
+        width: 100%;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        flex-wrap: nowrap;
+        input {
+          border: none;
+          outline: none;
+          font-size: 17px;
+          font-family: "Sohne";
+          color: #333333;
+          line-height: 3;
+          background: transparent;
+          padding: 5px;
+          padding-left: 10px;
+          width: 100%;
+          display: inline-block;
+          &::placeholder {
+            color: rgb(184, 181, 180);
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .index_right_text_top {
+      P {
+        margin-top: 35px;
+        font-size: 15px;
+        font-family: $sohneKraftig;
+        color: rgb(141, 139, 138);
+        line-height: 1.667;
+      }
+      button {
+        background-color: rgb(112, 95, 146);
+        width: 91px;
+        height: 48px;
+        font-size: 17px;
+        font-family: $sohneKraftig;
+        color: rgb(255, 255, 255);
+        line-height: 1.941;
+        border: none;
+        border-radius: 30px;
+        margin-top: 25px;
+      }
+    }
+    .index_right_account_wrapper {
+      .title {
+        margin-top: 50px;
+        font-size: 19px;
+        font-family: "Sohne";
+        color: rgb(76, 71, 68);
+        line-height: 1.316;
+      }
+      .index_right_right_account {
+        display: flex;
+        margin-top: 28px;
+        h2 {
+          font-size: 17px;
+          font-family: $Sohne-Halbfett;
+          color: rgb(76, 71, 68);
+          line-height: 1.353;
+        }
+        p {
+          font-size: 13px;
+          font-family: $sohneLeicht;
+          color: rgb(141, 138, 137);
+          line-height: 1.462;
+          max-width: 174px;
+        }
+        button {
+          background-color: rgb(112, 95, 146);
+          width: 91px;
+          height: 48px;
+          font-size: 17px;
+          font-family: $sohneKraftig;
+          color: rgb(255, 255, 255);
+          line-height: 1.941;
+          border: none;
+          border-radius: 30px;
+        }
+        .img_account {
+          margin-right: 20px;
+          max-width: 40px;
+          border-radius: 50%;
+        }
+        .index_right_right_account_in {
+          width: 100%;
+          div {
+            margin-top: 15px;
+          }
+        }
+      }
+      .see_all_button {
+        font-size: 15px;
+        font-family: $sohneKraftig;
+        color: rgb(139, 81, 130);
+        line-height: 1.667;
+        background: transparent;
+        border: none;
+        margin-top: 35px;
+      }
+    }
+    .contribute {
+      .contribute_title {
+        font-size: 23px;
+        font-family: $Sohne-Halbfett;
+        color: rgb(76, 71, 68);
+        line-height: 1.087;
+        margin-top: 50px;
+      }
+      .contribute__description {
+        font-size: 13px;
+        font-family: $sohneLeicht;
+        color: rgb(141, 138, 137);
+        line-height: 1.923;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: block;
+      }
+      p {
+        font-size: 15px;
+        font-family: $sohneLeicht;
+        color: rgb(76, 71, 68);
+        line-height: 1.667;
+        margin-bottom: 35px !important;
+      }
+      .contribute_buttons {
+        gap: 20px;
+        button {
+          border-radius: 30px;
+          padding: 5px 15px;
+          font-family: $sohneKraftig;
+          line-height: 2.2;
+          &:first-child {
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(112, 95, 146);
+            border: none;
+          }
+          &:last-child {
+            font-size: 15px;
+            color: rgb(112, 95, 146);
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(112, 95, 146);
+            background-color: rgba(112, 95, 146, 0);
+          }
+        }
+      }
+      .contribute_footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        a {
+          font-size: 13px;
+          font-family: $sohneLeicht;
+          color: rgb(141, 138, 137);
+          line-height: 0.923;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.button_up_arrov{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.button_up_arrov_active{
+  opacity: 1;
+}
+.footer_mobile {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-top: 2px solid rgba(76, 71, 68, 0.1882352941);
+  a {
+    font-size: 13px;
+    font-family: $sohneLeicht;
+    color: rgb(141, 138, 137);
+    line-height: 0.923;
+    text-decoration: none;
+  }
+}
+@media (max-width: 1480px) {
+  .main_container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1420px) {
+  .index_bottom {
+    .index_bottom_left {
+      max-width: 850px;
+    }
+  }
+}
+@media (max-width: 1265px) {
+  .index_bottom {
+    .index_bottom_left {
+      max-width: 750px;
+      .home {
+        padding: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  header {
+    .header {
+      .header_right {
+        div {
+          &:last-child {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1170px) {
+  .index_bottom {
+    .index_bottom_left {
+      max-width: 650px;
+      .account {
+        .account_in {
+          .account_in_right {
+            .ava_title {
+              flex-wrap: wrap;
+              span {
+                margin-left: 67px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .index_bottom {
+    .index_bottom_left {
+      max-width: 650px;
+      .account {
+        .account_in {
+          .account_in_right {
+            .ava_title {
+              flex-wrap: wrap;
+              h3 {
+                display: none;
+              }
+            }
+            .account_in_right_bottom .account_in_right_bottom_in div {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  header {
+    .header {
+      .logo {
+        .logo_mobile {
+          display: block;
+        }
+        .logo_desktop {
+          display: none;
+        }
+      }
+      .navbar_nav {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .index_bottom {
+    .index_bottom_left {
+      .home {
+        padding: 30px;
+        flex-direction: column;
+        a {
+          display: block;
+          float: left;
+        }
+        .now_in {
+          text-align: left;
+        }
+        span {
+          text-align: left;
+        }
+      }
+      .account {
+        .account_in {
+          .account_in_right {
+            .ava_title {
+              .global_ava_mobile {
+                img {
+                  border-radius: 0;
+                  max-width: 63px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  header {
+    .header {
+      .logo {
+        align-items: center;
+        .logo_mobile {
+          display: block;
+        }
+        .burger {
+          display: block;
+          margin-right: 22px;
+        }
+        .logo_desktop {
+          display: none;
+        }
+      }
+      .navbar_nav {
+        display: none;
+      }
+      .header_right {
+        .mobile_search {
+          display: block;
+          margin-right: 25px;
+        }
+        div {
+          &:last-child {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+  .index_bottom {
+    .index_bottom_left {
+      max-width: 100%;
+    }
+    .index_bottom_right {
+      display: none;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .index_bottom {
+    .index_bottom_left {
+      .account {
+        .title {
+          margin-top: 22px;
+          h1 {
+            font-size: 27px;
+            font-family: $sohneLeicht;
+            color: rgb(117, 142, 184);
+            line-height: 1.148;
+          }
+          h2 {
+            font-size: 27px;
+            font-family: $Sohne-Halbfett;
+            color: rgb(117, 142, 184);
+            line-height: 1.148;
+          }
+        }
+        .account_in {
+          padding: 20px 0;
+          .account_in_right {
+            .description {
+              display: none;
+            }
+            .title {
+              margin-top: 5px;
+              font-size: 15px;
+              line-height: 1.533;
+            }
+            .account_in_right_bottom {
+              margin-top: 20px;
+            }
+            .ava_title {
+              img {
+                margin-left: 8px;
+              }
+              h1 {
+                margin-left: 0;
+                font-size: 13px;
+                line-height: 1.769;
+              }
+              .global_ava_mobile {
+                img {
+                  margin: 0;
+                  transform: translateY(10px);
+                }
+              }
+              .ava {
+                img {
+                  margin-left: 20px;
+                }
+              }
+              p {
+                margin-left: 5px;
+                font-size: 13px;
+                line-height: 1.769;
+              }
+              span {
+                margin-left: 126px;
+                transform: translateY(-11px);
+                font-size: 13px;
+                line-height: 1.769;
+              }
+            }
+          }
+        }
+      }
+      .live_ness {
+        .live_ness_h1 {
+          font-size: 19px;
+          line-height: 1.421;
+          margin: 35px 0 !important;
+        }
+        .live_ness_p {
+          margin-left: 20px;
+          font-size: 15px;
+          line-height: 1.533;
+        }
+        .span {
+          margin-top: 35px;
+          font-size: 15px;
+          line-height: 1.533;
+        }
+      }
+      .proliferation {
+        .proliferation_h2 {
+          font-size: 19px;
+          line-height: 1.421;
+        }
+        .proliferation_p {
+          font-size: 15px;
+          line-height: 1.533;
+          margin-bottom: 35px !important;
+        }
+        .proliferation_span {
+          font-size: 15px;
+          line-height: 1.533;
+          margin-left: 20px;
+          padding-left: 18px;
+          border-left: 2px solid;
+        }
+        .proliferation_p_bottom {
+          margin-bottom: 0 !important;
+        }
+      }
+      .fake_part {
+        h2 {
+          font-size: 19px;
+          line-height: 1.421;
+          margin-top: 15px;
+        }
+        .fake_part_top_text {
+          font-size: 15px;
+          font-family: $sohneLeicht;
+          color: rgb(76, 71, 68);
+          line-height: 1.533;
+          span {
+            margin: 0 !important;
+            font-family: $sohneLeichtKursive !important;
+            font-weight: 600;
+          }
+        }
+        ul {
+          li {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 1.533;
+          }
+        }
+        .fake_part_bottom_text {
+          font-size: 15px;
+          line-height: 1.533;
+          margin-top: 10px;
+        }
+        .fake_part_bottom_img {
+          margin: 25px 0;
+        }
+        .fake_part_bottom_in_text {
+          font-size: 15px;
+          line-height: 1.533;
+        }
+      }
+    }
+  }
+  .button_up_arrov {
+    bottom: 0px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    position: absolute;
+  }
+  header{
+    .header{
+      padding: 10px 0;
+    }
+  }
+}
+@media (max-width: 355px) {
+  .index_bottom
+    .index_bottom_left
+    .account
+    .account_in
+    .account_in_right
+    .ava_title {
+    .crown_icon {
+      display: none;
+    }
+  }
+}

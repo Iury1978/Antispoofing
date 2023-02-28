@@ -1,0 +1,40 @@
+.buttons-block {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.buttons-block__btn {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 27px;
+  background-color: transparent;
+  border: none;
+}
+
+.buttons-block__btn_active {
+  font-size: 13px;
+  padding: 0 15px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 900px) {
+  .buttons-block {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .buttons-block__btn {
+    font-size: 15px;
+  }
+
+  .buttons-block__btn_active {
+    font-size: 13px;
+    padding: 0 15px;
+    height: 22px;
+  }
+}

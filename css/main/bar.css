@@ -1,0 +1,65 @@
+.bar {
+  margin-top: 20px;
+  width: 394px;
+  height: 168px;
+  background-image: url("../../img/fon.png");
+  background-repeat: no-repeat;
+}
+
+.bar__items {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  padding-top: 45px;
+  padding-left: 52px;
+
+}
+
+.bar__item {
+  position: relative;
+  font-size: 13px;
+  line-height: 19px;
+  color: #6a84b0;
+  width: 310px;
+}
+
+.bar__item::before {
+  position: absolute;
+  top: 6px;
+  left: -22px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #758eb8;
+}
+
+.bar__item span {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #6a84b0;
+}
+
+@media (max-width: 500px) {
+  .bar {
+    width: 329px;
+    height: 140px;
+  }
+
+  .bar__items {
+    padding-top: 33px;
+    padding-left: 38px;
+
+  }
+
+  .bar__item {
+    position: relative;
+    font-size: 13px;
+    line-height: 19px;
+    color: #6a84b0;
+    width: 277px;
+  }
+
+}

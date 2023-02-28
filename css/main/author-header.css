@@ -1,0 +1,356 @@
+.author-header {
+  padding-bottom: 51px;
+}
+
+.author-header__author {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.author-header__photo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.author-header__name {
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.author-header__wrapper-up {
+  display: flex;
+  align-items: center;
+  margin-bottom: -3px;
+}
+
+.author-header__editors {
+  display: flex;
+  width: 324px;
+  align-items: center;
+  padding-right: 5px;
+  justify-content: space-between;
+}
+
+.author-header__title {
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.author-header__editor {
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 23px;
+  color: #7a93bb;
+}
+
+.author-header__wrapper-icons-01 {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: flex-start;
+}
+
+.author-header__icon {
+  display: block;
+}
+
+.author-header__icon_share {
+  width: 20px;
+  height: 20px;
+}
+
+.author-header__icon_print {
+  width: 19px;
+  height: 18px;
+}
+
+.author-header__icon_write {
+  width: 19px;
+  height: 19px;
+}
+
+.author-header__icon_favorites {
+  width: 16px;
+  height: 22px;
+}
+
+.author-header__wrapper-down {
+  padding-left: 59px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.author-header__date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-header__date-day {
+  color: #b8b5b4;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.author-header__point {
+  display: block;
+  height: 3px;
+  width: 3px;
+  background-color: #b8b5b4;
+  border-radius: 50%;
+}
+
+.author-header__date-ago {
+  color: #b8b5b4;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.author-header__date-members {
+  margin-right: 20px;
+}
+
+.author-header__date-corona {
+  width: 16px;
+  height: 12px;
+  margin-right: 7px;
+}
+
+.author-header__date-member {
+  color: #b8b5b4;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+
+.author-header__date-edited {
+  color: #b8b5b4;
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 23px;
+  margin-right: 16px;
+}
+
+.author-header__wrapper-icons-02 {
+  display: flex;
+  align-items: flex-end;
+  align-self: center;
+}
+
+.author-header__icon-time {
+  width: 19px;
+  height: 19px;
+  margin-right: 33px;
+}
+
+.author-header__listen {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  margin-right: 25px;
+}
+
+.author-header__listen-icon {
+  width: 16px;
+  height: 15px;
+}
+
+.author-header__listen-text {
+  font-size: 15px;
+  color: #758eb8;
+  line-height: 12px;
+}
+
+.author-header__watch {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.author-header__watch-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.author-header__watch-text {
+  font-size: 15px;
+  color: #758eb8;
+  line-height: 12px;
+}
+
+@media (max-width: 1200px) {
+  .author-header__author {
+    gap: 10px;
+    margin-right: 14px;
+  }
+
+  .author-header__icon-time {
+    margin-right: 15px;
+  }
+
+  .author-header__listen {
+    display: flex;
+    gap: 3px;
+    align-items: flex-end;
+    margin-right: 15px;
+  }
+
+  .author-header__watch {
+    gap: 3px;
+  }
+}
+
+@media (max-width: 1074px) {
+  .author-header__wrapper-up {
+    flex-wrap: wrap;
+  }
+
+  .author-header__editors {
+    order: 2;
+    padding-left: 59px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 555px) {
+  .author-header {
+    padding-bottom: 24px;
+  }
+
+  .author-header__author {
+    margin-right: unset;
+  }
+
+  .author-header__photo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .author-header__name {
+    font-size: 13px;
+  }
+
+  .author-header__wrapper-icons-01 {
+    gap: 16px;
+  }
+
+  .author-header__icon_share {
+    width: 15px;
+    height: 15px;
+  }
+
+  .author-header__icon_print {
+    width: 15px;
+    height: 14px;
+  }
+
+  .author-header__icon_write {
+    width: 15px;
+    height: 15px;
+  }
+
+  .author-header__icon_favorites {
+    width: 12px;
+    height: 17px;
+  }
+
+  .author-header__editors {
+    padding-left: 39px;
+    width: 281px;
+  }
+
+  .author-header__title {
+    font-size: 13px;
+  }
+
+  .author-header__editor {
+    font-size: 13px;
+  }
+
+  .author-header__wrapper-down {
+    padding-left: 39px;
+  }
+
+  .author-header__date {
+    gap: 2px;
+    width: 100%;
+  }
+
+  .author-header__date-day {
+    font-size: 13px;
+  }
+
+  .author-header__point {
+    display: block;
+    height: 3px;
+    width: 3px;
+    background-color: #b8b5b4;
+    border-radius: 50%;
+  }
+
+  .author-header__date-ago {
+    font-size: 13px;
+  }
+
+  .author-header__date-members {
+    margin-right: unset;
+  }
+
+  .author-header__date-corona {
+    margin-right: unset;
+  }
+
+  .author-header__date-member {
+    display: none;
+  }
+
+  .author-header__date-edited {
+    font-size: 13px;
+    margin-right: unset;
+  }
+
+
+  .author-header__icon-time {
+    width: 13px;
+    height: 13px;
+    margin-right: 13px;
+  }
+
+  .author-header__listen {
+    gap: 8px;
+    margin-right: 16px;
+  }
+
+  .author-header__listen-icon {
+    width: 11px;
+    height: 10px;
+  }
+
+  .author-header__listen-text {
+    font-size: 11px;
+  }
+
+  .author-header__watch {
+    gap: 8px;
+  }
+
+  .author-header__watch-icon {
+    width: 11px;
+    height: 11px;
+  }
+
+  .author-header__watch-text {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,33 @@
+.banner {
+  display: flex;
+  height: 47px;
+  width: 100%;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.banner__text {
+  margin-left: 41px;
+  margin-right: 10px;
+  align-self: center;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.banner__text nobr {
+  color: var(--blue-dark);
+}
+
+
+@media (max-width: 900px) {
+  .banner {
+    height: 53px;
+  }
+
+  .banner__text {
+    margin-left: 14px;
+    margin-right: 10px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+}

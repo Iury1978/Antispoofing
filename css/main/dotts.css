@@ -1,0 +1,142 @@
+.main__text {
+  line-height: 27px;
+  max-width: 990px;
+}
+
+.main__text-01 {
+  padding-top: 61px;
+}
+
+.dotts {
+  max-width: 990px;
+  display: flex;
+  justify-content: center;
+}
+
+.dotts__container {
+  display: flex;
+  justify-content: space-between;
+  width: 66px;
+  height: 6px;
+  padding: 56px 0;
+}
+
+.dotts__dott {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c4c2c2;
+}
+
+.main__text-02 {
+  padding-bottom: 69px;
+}
+
+.main__text-03 {
+  padding: 66px 0;
+}
+
+.table-main__header {
+  display: grid;
+  grid-template-columns: 174px 413px 413px;
+  grid-template-rows: 45px 45px repeat(5, 50px);
+  grid-template-areas:
+    "header-01 header-02  header-02"
+    "header-01 header-03  header-04"
+}
+
+.table-main__all {
+  background-color: #f0f7f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8ab8c2;
+}
+
+.table-main__all_header-01 {
+  grid-area: header-01;
+  border-right: solid 1px #d9e9ec;
+}
+
+.table-main__all_header-02 {
+  grid-area: header-02;
+  border-bottom: solid 1px #d9e9ec;
+}
+
+.table-main__all_header-03 {
+  grid-area: header-03;
+  border-right: solid 1px #d9e9ec;
+}
+
+.table-main__all_header-04 {
+  grid-area: header-04;
+}
+
+.table-main__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.column-01 {
+  font-weight: 500;
+  background-color: #fbfdfd;
+  border-bottom: solid 1px #d9e9ec;
+  border-right: solid 1px #d9e9ec;
+}
+
+.column-02 {
+  border-bottom: solid 1px #d9e9ec;
+  border-right: solid 1px #d9e9ec;
+}
+
+.column-03 {
+  border-bottom: solid 1px #d9e9ec;
+
+}
+
+.table-main__row-05.column-01,
+.table-main__row-05.column-02,
+.table-main__row-05.column-03 {
+  border-bottom: none;
+}
+
+.table-main__btn {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--violet);
+}
+
+@media (max-width: 1450px) {
+  .main__table {
+
+    overflow-x: scroll;
+  }
+
+  .table-main__header {
+    display: grid;
+    grid-template-columns: 134px 413fr 413fr;
+    grid-template-rows: 36px 36px repeat(5, 50px);
+    grid-template-areas:
+      "header-01 header-02  header-02"
+      "header-01 header-03  header-04"
+  }
+
+  .table-main__all {
+    font-size: 15px;
+  }
+
+  .table-main__row {
+    padding-left: 20px;
+    font-size: 13px;
+  }
+
+}

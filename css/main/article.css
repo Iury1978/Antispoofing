@@ -1,0 +1,25 @@
+.article__title {
+  max-width: 820px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+
+.article__subtitle {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 200;
+  color: var(--gray-light);
+}
+
+@media (max-width: 900px) {
+  .article__title {
+    font-size: 19px;
+    margin-bottom: 13px;
+  }
+
+  .article__subtitle {
+    font-size: 15px;
+  }
+}

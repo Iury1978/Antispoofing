@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antispoofing</title>
+
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <img class="header__burger" src="./img/burger.png" alt="mobile menu">
+        <div class="header__logo">
+          <img src="./img/logo-part.png" alt="Logo">
+          <p>Antispoofing</p>
+        </div>
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+
+            <svg class="header__burger-close" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 20L4 4M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <li class="navigation__item">
+              <a href="#!" class="navigation__link">Face recognition</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#!" class="navigation__link navigation__link_active">Deepfake detection</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#!" class="navigation__link">Fingerprint biometrics</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#!" class="navigation__link">Voice Liveness</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#!" class="navigation__link">Biometric safety</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__inner-wrapper">
+          <img class="header__search" src="./img/search.png" alt="search">
+          <div class="header__write">
+            <img src="./img/write.png" alt="icon">
+            <span>Write</span>
+          </div>
+          <div class="header__select">
+            <img class="header__select-man" src="./img/man.png" alt="icon">
+            <img class="header__select-arrow" src="./img/arrow-down.png" alt="icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__container">
+        <div class="main__left-block">
+          <div class="banner">
+            <p class="banner__text">This is your last free member-only story this month.
+              <nobr>Sign up for Medium and getan extra one</nobr>
+            </p>
+          </div>
+
+          <div class="buttons-block">
+            <button class="buttons-block__btn buttons-block__btn_active">
+              Deepfake detection
+            </button>
+            <button class="buttons-block__btn">
+              in Antispoofing
+            </button>
+          </div>
+          <div class="author-header">
+            <div class="author-header__wrapper-up">
+              <nobr class="author-header__author">
+                <img src="./img/avatar.png" alt="photo" class="author-header__photo">
+                <p class="author-header__name">Hajime Takeda</p>
+              </nobr>
+              <nobr class="author-header__editors">
+                <span class="author-header__title">Editors:</span>
+                <span class="author-header__editor">Liana Murrei</span>
+                <span class="author-header__editor">Bob Ronning</span>
+                <span class="author-header__editor">Alicia Key</span>
+              </nobr>
+              <nobr class="author-header__wrapper-icons-01">
+                <img src="./img/icon-01.png" alt="icon-share" class="author-header__icon author-header__icon_share">
+                <img src="./img/icon-02.png" alt="icon-print" class="author-header__icon author-header__icon_print">
+                <img src="./img/icon-03.png" alt="icon-write" class="author-header__icon author-header__icon_write">
+                <img src="./img/icon-04.png" alt="icon-favorites"
+                  class="author-header__icon author-header__icon_favorites">
+              </nobr>
+            </div>
+            <div class="author-header__wrapper-down">
+              <nobr class="author-header__date">
+                <p class="author-header__date-day">Dec 17</p>
+                <div class="author-header__point"></div>
+                <p class="author-header__date-ago">1 day ago</p>
+                <div class="author-header__date-members">
+                  <img src="./img/corona.png" alt="corona" class="author-header__date-corona">
+                  <span class="author-header__date-member">Member-only</span>
+                </div>
+                <p class="author-header__date-edited">Edited December 12, 2022</p>
+              </nobr>
+              <nobr class="author-header__wrapper-icons-02">
+                <img src="./img/icon-05.png" alt="icon-time" class="author-header__icon-time">
+                <div class="author-header__listen">
+                  <img src="./img/icon-06.png" alt="" class="author-header__listen-icon">
+                  <span class="author-header__listen-text">Listen</span>
+                </div>
+                <div class="author-header__watch">
+                  <img src="./img/icon-07.png" alt="" class="author-header__watch-icon">
+                  <span class="author-header__watch-text">Watch</span>
+                </div>
+              </nobr>
+            </div>
+          </div>
+          <div class="author__article article">
+            <h1 class="article__title">Our encyclopedia is dedicated to the Liveness detection, Spoofing attacks
+              and Antispoofing measures</h1>
+            <p class="article__subtitle">Spoofing is a set of malicious techniques, which allow an attacker to pose as
+              someone else</p>
+          </div>
+          <div class="bar">
+            <ul class="bar__items">
+              <li class="bar__item"><span>NBF</span> — Amount of the bona fide presentations.</li>
+              <li class="bar__item"><span>Resi</span> — Again, it assumes value 1 if at least one
+                PA attempt is registered. Otherwise, it retains value 0.</li>
+            </ul>
+          </div>
+
+          <p class="main__text main__text-01">
+            In our articles, we discuss the most successful methods and the best antispoofing tools, as well as liveness
+            detection techniques. We also focus on the international antispoofing and liveness standards, attack types
+            and their
+            classification, terminology, and other aspects of the matter. To validate the data presented, we quote
+            scientific publications, as well as popular media, and news dedicated to liveness security and antispoofing
+          </p>
+          <div class="dotts">
+            <div class="dotts__container">
+              <div class="dotts__dott"></div>
+              <div class="dotts__dott"></div>
+              <div class="dotts__dott"></div>
+            </div>
+          </div>
+          <p class="main__text main__text-02">
+            Opinions and additions made by the viewers with an appropriate degree of training, education and
+            professional experience are welcome in our facial liveness Wiki
+          </p>
+
+          <div class="main__table">
+            <div class="table-main__header table-main">
+              <div class="table-main__all table-main__all_header-01">Anti-Spoofing</div>
+              <div class="table-main__all table-main__all_header-02">Adversarial Spoofing Attacks</div>
+              <div class="table-main__all table-main__all_header-03">Deepfake Detection Competitions</div>
+              <div class="table-main__all table-main__all_header-04">Anti-Spoofing for IoT</div>
+
+              <div class="table-main__row table-main__row-01 column-01"><span>Voice</span></div>
+              <div class="table-main__row table-main__row-01 column-02"><span>Liveness in Remote KYC</span></div>
+              <div class="table-main__row table-main__row-01 column-03">
+                <span>Anti-Spoofing for IoT</span>
+              <button class="table-main__btn">For authors</button>
+              </div>
+
+              <div class="table-main__row table-main__row-02 column-01"><span>Face</span></div>
+              <div class="table-main__row table-main__row-02 column-02"><span>Voice Antispoofing Contests</span></div>
+              <div class="table-main__row table-main__row-02 column-03"><span>Anti-Spoofing for IoT</span></div>
+
+              <div class="table-main__row table-main__row-03 column-01"><span>Fingers</span></div>
+              <div class="table-main__row table-main__row-03 column-02"><span>Liveness in Remote KYC</span></div>
+              <div class="table-main__row table-main__row-03 column-03"><span>Anti-Spoofing for IoT</span></div>
+
+              <div class="table-main__row table-main__row-04 column-01"><span>Voice</span></div>
+              <div class="table-main__row table-main__row-04 column-02"><span>Voice Antispoofing Contests</span></div>
+              <div class="table-main__row table-main__row-04 column-03"><span>Anti-Spoofing for IoT</span></div>
+
+              <div class="table-main__row table-main__row-05 column-01"><span>Face</span></div>
+              <div class="table-main__row table-main__row-05 column-02"><span>Voice Antispoofing Contests</span></div>
+              <div class="table-main__row table-main__row-05 column-03"><span>Anti-Spoofing for IoT</span></div>
+            </div>
+          </div>
+          <p class="main__text main__text-03">
+            In our articles, we discuss the most successful methods and the best antispoofing tools, as well as liveness
+            detection
+            techniques. We also focus on the international antispoofing and liveness standards, attack types and their
+            classification, terminology, and other aspects of the matter. To validate the data presented, we quote
+            scientific
+            publications, as well as popular media, and news dedicated to liveness security and antispoofing
+          </p>
+          <!-- <div class="faq">
+            <div class="container">
+              <h2 class="faq__title">Frequently asked Questions <span>(FAQ)</spa>
+              </h2>
+              <ul class="faq__list">
+                <li class="faq__item">
+                  <button class="faq__question" type="button">Is voice liveness detection used in modern
+                    smartphones?</button>
+                  <div class="faq__answer">
+                    <span class="faq__dropdown">
+                      <p>At least two voice anti-spoofing solutions are implemented in mobile technology.</p>
+                      <p>As of now, two notable <a class="faq__link" href="#!">voice spoofing</a> solutions are proposed
+                        for smartphone integration.</p>
+                      <p>
+                        VoiceGesture is a solution, which focuses on articulatory gesture analysis. In other words, it
+                        examines phoneme sounds
+                        a speaker. The system emits an inaudible 20kHz tone, while also recording speaker’s passphrase
+                        and tone reflections.
+                        Then, acoustic data is extracted from the recording to execute biometric matching.
+                      </p>
+                      <p>
+                        VoiceLive performs time-difference-of-arrival (TDoA) dynamic extraction from a sample of the
+                        speaker’s voice. Then it
+                        calculates the similarity score to match it to the biometric template.
+                      </p>
+                    </span>
+                  </div>
+                </li>
+                <li class="faq__item">
+                  <button class="faq__question" type="button">Originality vs. Authenticity?</button>
+                  <div class="faq__answer">
+                    <p class="faq__dropdown">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id a veniam excepturi, molestiae
+                      velit perspiciatis facilis iusto sit nesciunt?
+                    </p>
+                  </div>
+                </li>
+                <li class="faq__item">
+                  <button class="faq__question" type="button">What is biometric spoofing?</button>
+                  <div class="faq__answer">
+                    <p class="faq__dropdown">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia accusamus ratione quam
+                      aut, recusandae ab? At, doloremque reprehenderit alias officia cum soluta autem dolor ad quos,
+                      necessitatibus, tempore magnam ab!
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+
+        <aside class="main__aside aside">
+          <img src="./img/avatar.jpg" alt="" class="aside__avatar">
+          <p class="aside__name">Hajime Takeda</p>
+          <p class="aside__followers">15 Followers</p>
+          <p class="aside__text">Data science in marketing, retail, and eCommerce.</p>
+          <a href="#!" class="aside__link">https://www.linkedin.com/in/hajime-takeda/</a>
+          <div class="aside__buttons">
+            <button class="aside__btn-follow">Follow</button>
+            <button class="aside__btn-send">
+              <img src="./img/send.png" alt="icon send" class="aside__btn-send-img">
+            </button>
+          </div>
+
+          <div class="aside__contents-wrapper">
+            <p class="aside__contents-text">Contents</p>
+            <p class="aside__contents-hide">Hide</p>
+          </div>
+          <ol class="aside__list" type="1">
+            <li class="aside__item"><a href="#!" class="aside__item-link">General Overview</a></li>
+            <li class="aside__item"><a href="#!" class="aside__item-link">Statistics &amp; General Information</a></li>
+            <li class="aside__item"><a href="#!" class="aside__item-link aside__item-link_active"">Age-invariant Face Recognition Methods</a>
+              <ol class=" aside__list-children">
+            <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link">Generative Methods</a>
+            </li>
+            <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link aside__item-link_active"">Non-Generative Methods</a></li>
+                <li class=" aside__item aside__item_children"><a href="#!" class="aside__item-link">Deep Neural Network
+                  Approaches</a>
+            </li>
+          </ol>
+          </li>
+          <li class="aside__item"><a href="#!" class="aside__item-link">Age-invariant Face Recognition Methods</a>
+            <ol class=" aside__list-children">
+              <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link">General Overview</a>
+              </li>
+              <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link">Statistics &amp;
+                  General Information</a>
+              </li>
+            </ol>
+          </li>
+          </ol>
+
+          <p class="aside__more-title">More from Deepfake detection</p>
+
+          <div class="aside-more">
+
+            <div class="aside-more__container">
+              <img src="./img/avatar_more.jpg" alt="avatar" class="aside-more__img">
+              <div class="aside-more__wrapper">
+                <div class="aside-more__inner-wrapper">
+                  <img src="./img/avatar.jpg" alt="avatar" class="aside-more__avatar">
+                  <p class="aside-more__name">Caitlin Kindig</p>
+                </div>
+                <p class="aside-more__desc">20 Entertaining Uses
+                  of ChatGPT You Never Knew
+                  Were Possible</p>
+              </div>
+            </div>
+            <div class="aside-more__container">
+              <img src="./img/avatar_more.jpg" alt="avatar" class="aside-more__img">
+              <div class="aside-more__wrapper">
+                <div class="aside-more__inner-wrapper">
+                  <img src="./img/avatar.jpg" alt="avatar" class="aside-more__avatar">
+                  <p class="aside-more__name">Caitlin Kindig</p>
+                </div>
+                <p class="aside-more__desc">20 Entertaining Uses
+                  of ChatGPT You Never Knew
+                  Were Possible</p>
+              </div>
+            </div>
+            <div class="aside-more__container">
+              <img src="./img/avatar_more.jpg" alt="avatar" class="aside-more__img">
+              <div class="aside-more__wrapper">
+                <div class="aside-more__inner-wrapper">
+                  <img src="./img/avatar.jpg" alt="avatar" class="aside-more__avatar">
+                  <p class="aside-more__name">Caitlin Kindig</p>
+                </div>
+                <p class="aside-more__desc">20 Entertaining Uses
+                  of ChatGPT You Never Knew
+                  Were Possible</p>
+              </div>
+            </div>
+          </div>
+          <div class="aside__footer footer">
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Help</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Editors</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#!" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+@import "./normalize.css";
+@import "./default.css";
+@import "./fonts.css";
+
+@import "./variables.css";
+
+@import "./header/header.css";
+
+
+@import "./main/main.css";
+@import "./main/banner.css";
+@import "./main/buttons-block.css";
+@import "./main/author-header.css";
+@import "./main/article.css";
+@import "./main/bar.css";
+@import "./main/dotts.css";
+@import "./main/faq.css";
+
+
+@import "./main/aside.css";
