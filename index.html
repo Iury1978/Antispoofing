@@ -21,12 +21,11 @@
           <p>Antispoofing</p>
         </div>
         <nav class="header__navigation navigation">
-          <ul class="navigation__list">
-
-            <svg class="header__burger-close" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 20L4 4M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
+          <svg class="header__burger-close" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 20L4 4M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <ul class="navigation__list">   
             <li class="navigation__item">
               <a href="#!" class="navigation__link">Face recognition</a>
             </li>
@@ -78,26 +77,26 @@
           </div>
           <div class="author-header">
             <div class="author-header__wrapper-up">
-              <nobr class="author-header__author">
+              <div class="author-header__author">
                 <img src="./img/avatar.png" alt="photo" class="author-header__photo">
                 <p class="author-header__name">Hajime Takeda</p>
-              </nobr>
-              <nobr class="author-header__editors">
+              </div>
+              <div class="author-header__editors">
                 <span class="author-header__title">Editors:</span>
                 <span class="author-header__editor">Liana Murrei</span>
                 <span class="author-header__editor">Bob Ronning</span>
                 <span class="author-header__editor">Alicia Key</span>
-              </nobr>
-              <nobr class="author-header__wrapper-icons-01">
+              </div>
+              <div class="author-header__wrapper-icons-01">
                 <img src="./img/icon-01.png" alt="icon-share" class="author-header__icon author-header__icon_share">
                 <img src="./img/icon-02.png" alt="icon-print" class="author-header__icon author-header__icon_print">
                 <img src="./img/icon-03.png" alt="icon-write" class="author-header__icon author-header__icon_write">
                 <img src="./img/icon-04.png" alt="icon-favorites"
                   class="author-header__icon author-header__icon_favorites">
-              </nobr>
+              </div>
             </div>
             <div class="author-header__wrapper-down">
-              <nobr class="author-header__date">
+              <div class="author-header__date">
                 <p class="author-header__date-day">Dec 17</p>
                 <div class="author-header__point"></div>
                 <p class="author-header__date-ago">1 day ago</p>
@@ -106,8 +105,8 @@
                   <span class="author-header__date-member">Member-only</span>
                 </div>
                 <p class="author-header__date-edited">Edited December 12, 2022</p>
-              </nobr>
-              <nobr class="author-header__wrapper-icons-02">
+              </div>
+              <div class="author-header__wrapper-icons-02">
                 <img src="./img/icon-05.png" alt="icon-time" class="author-header__icon-time">
                 <div class="author-header__listen">
                   <img src="./img/icon-06.png" alt="" class="author-header__listen-icon">
@@ -117,7 +116,7 @@
                   <img src="./img/icon-07.png" alt="" class="author-header__watch-icon">
                   <span class="author-header__watch-text">Watch</span>
                 </div>
-              </nobr>
+              </div>
             </div>
           </div>
           <div class="author__article article">
@@ -153,7 +152,7 @@
             professional experience are welcome in our facial liveness Wiki
           </p>
 
-          <!-- <div class="main__table">
+          <div class="main__table">
             <div class="table-main__header table-main">
               <div class="table-main__all table-main__all_header-01">Anti-Spoofing</div>
               <div class="table-main__all table-main__all_header-02">Adversarial Spoofing Attacks</div>
@@ -183,7 +182,10 @@
               <div class="table-main__row table-main__row-05 column-02"><span>Voice Antispoofing Contests</span></div>
               <div class="table-main__row table-main__row-05 column-03"><span>Anti-Spoofing for IoT</span></div>
             </div>
-          </div> -->
+          </div>
+
+
+          
           <p class="main__text main__text-03">
             In our articles, we discuss the most successful methods and the best antispoofing tools, as well as liveness
             detection
@@ -203,21 +205,21 @@
                   smartphones?</button>
                 <div class="faq__answer">
                   <span class="faq__dropdown">
-                    <p>At least two voice anti-spoofing solutions are implemented in mobile technology.</p>
-                    <p>As of now, two notable <a class="faq__link" href="#!">voice spoofing</a> solutions are proposed
-                      for smartphone integration.</p>
-                    <p>
+                    <span>At least two voice anti-spoofing solutions are implemented in mobile technology.</span>
+                    <span>As of now, two notable <a class="faq__link" href="#!">voice spoofing</a> solutions are proposed
+                      for smartphone integration.</span>
+                    <span>
                       VoiceGesture is a solution, which focuses on articulatory gesture analysis. In other words, it
                       examines phoneme sounds
                       a speaker. The system emits an inaudible 20kHz tone, while also recording speaker’s passphrase
                       and tone reflections.
                       Then, acoustic data is extracted from the recording to execute biometric matching.
-                    </p>
-                    <p>
+                    </span>
+                    <span>
                       VoiceLive performs time-difference-of-arrival (TDoA) dynamic extraction from a sample of the
                       speaker’s voice. Then it
                       calculates the similarity score to match it to the biometric template.
-                    </p>
+                    </span>
                   </span>
                 </div>
               </li>
@@ -305,6 +307,7 @@
         </div>
 
         <aside class="main__aside aside">
+          <div class="aside__container">
           <img src="./img/avatar.jpg" alt="" class="aside__avatar">
           <p class="aside__name">Hajime Takeda</p>
           <p class="aside__followers">15 Followers</p>
@@ -324,11 +327,11 @@
           <ol class="aside__list" type="1">
             <li class="aside__item"><a href="#!" class="aside__item-link">General Overview</a></li>
             <li class="aside__item"><a href="#!" class="aside__item-link">Statistics &amp; General Information</a></li>
-            <li class="aside__item"><a href="#!" class="aside__item-link aside__item-link_active"">Age-invariant Face Recognition Methods</a>
+            <li class="aside__item"><a href="#!" class="aside__item-link aside__item-link_active">Age-invariant Face Recognition Methods</a>
               <ol class=" aside__list-children">
             <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link">Generative Methods</a>
             </li>
-            <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link aside__item-link_active"">Non-Generative Methods</a></li>
+            <li class="aside__item aside__item_children"><a href="#!" class="aside__item-link aside__item-link_active">Non-Generative Methods</a></li>
                 <li class=" aside__item aside__item_children"><a href="#!" class="aside__item-link">Deep Neural Network
                   Approaches</a>
             </li>
@@ -408,7 +411,7 @@
               </li>
             </ul>
           </div>
-
+</div>
         </aside>
       </div>
     </div>

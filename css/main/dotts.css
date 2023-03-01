@@ -1,7 +1,3 @@
-.table-main_ {
-  overflow-x: scroll;
-}
-
 .main__text {
   line-height: 27px;
   max-width: 990px;
@@ -79,6 +75,7 @@
 
 .table-main__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
@@ -120,16 +117,18 @@
 }
 
 @media (max-width: 1450px) {
+  .table-main {
+    overflow-x: scroll;
+  }
+
   .main__text {
     font-size: 15px;
     line-height: 23px;
-
   }
-
 
   .table-main__header {
     display: grid;
-    grid-template-columns: 134px 400px 400px;
+    grid-template-columns: 1fr 2fr 4fr;
     grid-template-rows: 36px 36px repeat(5, 50px);
     grid-template-areas:
       "header-01 header-02  header-02"
@@ -145,4 +144,19 @@
     font-size: 13px;
   }
 
+}
+
+@media (max-width: 900px) {
+  .table-main {
+    overflow-x: scroll;
+  }
+
+  .table-main__header {
+    display: grid;
+    grid-template-columns: 134px 400px 400px;
+    grid-template-rows: 36px 36px repeat(5, 50px);
+    grid-template-areas:
+      "header-01 header-02  header-02"
+      "header-01 header-03  header-04"
+  }
 }
