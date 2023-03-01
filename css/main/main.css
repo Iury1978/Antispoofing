@@ -11,7 +11,8 @@
 
 .main__aside {
   padding-left: 30px;
-  width: 374px;
+  max-width: 374px;
+  padding-right: 10px;
 }
 
 @media (max-width: 1200px) {

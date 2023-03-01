@@ -1,3 +1,7 @@
+.table-main_ {
+  overflow-x: scroll;
+}
+
 .main__text {
   line-height: 27px;
   max-width: 990px;
@@ -116,14 +120,16 @@
 }
 
 @media (max-width: 1450px) {
-  .main__table {
+  .main__text {
+    font-size: 15px;
+    line-height: 23px;
 
-    overflow-x: scroll;
   }
+
 
   .table-main__header {
     display: grid;
-    grid-template-columns: 134px 413fr 413fr;
+    grid-template-columns: 134px 400px 400px;
     grid-template-rows: 36px 36px repeat(5, 50px);
     grid-template-areas:
       "header-01 header-02  header-02"
